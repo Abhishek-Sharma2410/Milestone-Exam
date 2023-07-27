@@ -1,0 +1,168 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Anton', sans-serif;
+    box-sizing: border-box;
+}
+.hamburger-icon{
+    display:none;
+}
+.user-profile-image{
+    display:none;
+}
+nav{
+    min-height:50px;
+}
+.nav-container{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin-top:20px;
+}
+.logo-container{
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+.logo-container >img{
+    height:40px;
+    width:40px;
+}
+ul{
+    display:flex;
+    justify-content:space-evenly;
+    gap:30px;
+}
+ul > li{
+    list-style:none;
+}
+li >a{
+    text-decoration:none;
+    color:#808080;
+}
+li >a:hover{
+    color:#ffa500;
+}
+.button-container > a {
+    text-decoration:none;
+    padding:15px 40px;
+    color:black;
+    background-color:#fff;
+    border:1px solid black;
+}
+.section-one{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.left-section{
+    margin-left:50px;
+    margin-right:50px;
+}
+.left-section > h1{
+    font-size:3rem;
+}
+.left-section > p{
+    font-size:1.4rem;
+    padding-left:20px;
+    font-weight:100;
+    border-left:1px solid #000;
+    color:grey;
+}
+.right-section >img{
+    width:40vw;
+}
+.inner-buttons{
+    margin-top:60px;
+}
+.orange{
+    padding:15px 40px;
+    color:#fff;
+    background-color:#ff7700;
+    border:1px solid #ff7700;
+    outline:none;
+}
+.white{
+    padding:15px 40px;
+    color:black;
+    background-color:#fff;
+    border:1px solid black;
+    margin-left:20px;
+}
+.buttons{
+    display:none;
+}
+.section-two{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color:#001537;
+    color:white;
+    padding:60px 50px;
+    margin-top:40px;
+}
+.logo-section{
+    background-color:#00c583;
+    display:inline-block;
+    padding:10px 10px;
+    border-radius:5px;
+}
+.text , .text-section >p{
+    color:#e0e0e0;
+}
+.logo-section2{
+    background-color:#ff7700;
+    padding:10px 15px;
+}
+.logo-section3{
+    background-color:blue;
+    padding:10px 15px;
+}
+@media screen and (max-width:1155px){
+    .hamburger-icon{
+        display:block;
+        height:40px;
+        width:40px;
+    }
+    .user-profile-image{
+        display:block;
+        height:40px;
+        width:40px;
+    }
+    .nav-links{
+        display:none;
+    }
+    .button-container{
+        display:none;
+    }
+}
+@media screen and (max-width:1017px){
+    .section-one{
+        flex-direction:column;
+    }
+    .right-section > img{
+        width:400px;
+    }
+    .inner-buttons{
+        display:none;
+    }
+    .hide{
+        display:none;
+    }
+    .buttons{
+        display: block;
+        text-align: center;
+        margin-top:50px;
+    }
+    .section-two{
+        flex-direction: column;
+    }
+    .teacher-section , .online-classes , .support{
+        margin-top:30px;
+    }
+}
+@media screen and (max-width:420px){
+    .right-section >img{
+        width:350px;
+    }
+}
